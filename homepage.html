@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Santa Clara Events</title>
@@ -23,6 +24,19 @@
         background-color: #b30738;
         color: white;
         }
+    .search-container button {
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 12px;
+      border: none;
+      cursor: pointer;
+  }
+  .search-container button:hover {
+    background: #ccc;
+}
+
 
 
 </style>
@@ -104,7 +118,47 @@
     </div>
 
     <div class="col-sm-4"> 
-        setsalkjdfaldkfjasl
+
+        <div id="datetimepicker12"></div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker12').datetimepicker({
+                    inline: true,
+                });
+            });
+        </script>
+
+
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+         </div>
+        <div class="checkbox">
+            <label><input type="checkbox" value="" checked="">Academics</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="" checked="">Athletics</label>
+        </div>
+        <div class="checkbox disabled">
+          <label><input type="checkbox" value="" checked="">Ceremonies</label>
+        </div>
+        <div class="checkbox disabled">
+          <label><input type="checkbox" value="" checked="">Exhibits</label>
+        </div>
+        <div class="checkbox disabled">
+          <label><input type="checkbox" value="" checked="">Information Sessions</label>
+        </div>
+        <div class="checkbox disabled">
+          <label><input type="checkbox" value="" checked="">Lectures/Seminars</label>
+        </div>
+        <div class="checkbox disabled">
+          <label><input type="checkbox" value="" checked="">Not Specified</label>
+        </div>
+
+        
+
     </div> 
     <script type="text/javascript">
         $('#sandbox-container .input-group.date').datepicker({}); 
