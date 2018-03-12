@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Santa Clara Events</title>
+</head>
+
+<style>
+    body {
+    }
+    .well{
+        background-color: #b30738;
+        color: white;
+        }
+
+
+</style>
+<body>
+
+    <img src="events_header.png" class="img-responsive">
+
+<div class="container"> 
+     
+     <ul class="pager pager-sm">
+        <li class="previous"><a href="#"> < </a></li>
+        <li class="previous"><a href="#"> > </a></li>
+    </ul>
+
+    <div class="row">
+    <div class="col-sm-8">
+    <div class="well well-sm" id="datestring1"> </div>
+       
+    <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Event</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>11:00 am</td>
+        <td>Drop-In Peer Academic Advising</td>
+        <td>O'Connor 107</td>
+      </tr>
+      <tr>
+        <td>11:30 am</td>
+        <td>Financial Planning Workshop</td>
+        <td>Lucas 203B</td>
+      </tr>
+      <tr>
+        <td>12:00 pm</td>
+        <td>Daily Mass</td>
+        <td>Mission Church</td>
+      </tr>
+    </tbody>
+    </table>
+
+    <div class="well well-sm" id="datestring2"> </div>    
+    <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Event</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9:00 am</td>
+        <td>Study Abroad Info Session</td>
+        <td>Benson 05</td>
+      </tr>
+      <tr>
+        <td>12:30 pm</td>
+        <td>SCU Jazz Combo Performance</td>
+        <td>Mayer Theatre</td>
+      </tr>
+      <tr>
+        <td>2:00 pm</td>
+        <td>SCU Women's Basketball vs Saint Mary's College</td>
+        <td>Leavey Center</td>
+      </tr>
+    </tbody>
+  </table>
+
+    <ul class="pager pager-sm">
+        <li class="previous"><a href="#"> < </a></li>
+        <li class="previous"><a href="#"> > </a></li>
+    </ul>
+
+    </div>
+
+    <div class="col-sm-4"> 
+        setsalkjdfaldkfjasl
+    </div> 
+    <script type="text/javascript">
+        $('#sandbox-container .input-group.date').datepicker({}); 
+    </script>
+</div>
+
+<script>
+
+    var weekdayNames = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    
+    var d = new Date();
+    var weekday = weekdayNames[d.getDay()];
+    var month = monthNames[d.getMonth()]
+
+    var datestring = weekday + ", "  + month +  " " + d.getDate();
+    document.getElementById("datestring1").innerHTML = datestring;
+
+    var d = new Date();
+    var weekday = weekdayNames[d.getDay()+1];
+    var month = monthNames[d.getMonth()+1]
+
+    var datestring = weekday + ", "  + month +  " " + (d.getDate()+1);
+    document.getElementById("datestring2").innerHTML = datestring;
+
+
+</script>
+<script type="text/javascript">
+    $('#sandbox-container .input-group.date').datepicker({
+        }); 
+</script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+<script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+</body>
+</html> 
