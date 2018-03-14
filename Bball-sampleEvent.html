@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Santa Clara Events</title>
+</head>
+
+<style>
+    body {
+    }
+    .well{
+        background-color: #b30738;
+        color: white;
+    }
+
+
+</style>
+<body>
+
+<img src="single_event_header.png" class="img-responsive">
+
+<div class="container">
+    <h1>Women's Basketball vs. St Mary's College</h1>
+    <div class="row">
+        <div class="col-sm-8">
+            <!--<h1>Women's Basketball vs. St. Mary's College</h1>-->
+            <p>
+                <br><br>
+
+                <b>When:</b> Wednesday, March 14th at 2:00pm
+
+                <br><br>
+                <b>Where:</b> Leavey Center
+
+                <br><br>
+                <b>Description:</b> Women's Basketball team takes on St. Mary's College in their 10th game of the season. Go Broncos!
+            </p>
+        </div>
+        <script type="text/javascript">
+            $('#sandbox-container .input-group.date').datepicker({});
+        </script>
+    </div>
+
+    <script>
+
+        var weekdayNames = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        var d = new Date();
+        var weekday = weekdayNames[d.getDay()];
+        var month = monthNames[d.getMonth()]
+
+        var datestring = weekday + ", "  + month +  " " + d.getDate();
+        document.getElementById("datestring1").innerHTML = datestring;
+
+        var d = new Date();
+        var weekday = weekdayNames[d.getDay()+1];
+        var month = monthNames[d.getMonth()+1]
+
+        var datestring = weekday + ", "  + month +  " " + (d.getDate()+1);
+        document.getElementById("datestring2").innerHTML = datestring;
+
+
+    </script>
+    <script type="text/javascript">
+        $('#sandbox-container .input-group.date').datepicker({
+        });
+    </script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+</body>
+</html>
