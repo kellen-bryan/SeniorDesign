@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48e05af8-98db-4352-aa05-db0ca1ba3621" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/single_event_header.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sampleEvent.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addEventForm.html" afterPath="$PROJECT_DIR$/addEventForm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bball-sampleEvent.html" afterPath="$PROJECT_DIR$/Bball-sampleEvent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samleEvent.html" afterPath="$PROJECT_DIR$/samleEvent.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,11 +39,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sampleEvent.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sampleEvent.html">
+      <file leaf-file-name="Bball-sampleEvent.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Bball-sampleEvent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="201">
+              <caret line="37" column="15" lean-forward="true" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="samleEvent.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samleEvent.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -92,6 +101,8 @@
       <list>
         <option value="$PROJECT_DIR$/addEventForm.html" />
         <option value="$PROJECT_DIR$/sampleEvent.html" />
+        <option value="$PROJECT_DIR$/samleEvent.html" />
+        <option value="$PROJECT_DIR$/Bball-sampleEvent.html" />
       </list>
     </option>
   </component>
@@ -173,12 +184,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521053473886</updated>
-      <workItem from="1521053475476" duration="2899000" />
+      <workItem from="1521053475476" duration="3566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2899000" />
+    <option name="totallyTimeSpent" value="3566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -248,10 +259,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sampleEvent.html">
+    <entry file="file://$PROJECT_DIR$/samleEvent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="429">
+          <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bball-sampleEvent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="37" column="15" lean-forward="true" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
           <folding />
         </state>
       </provider>
