@@ -50,18 +50,18 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr class='clickable-row' data-href='academic-advising-sampleEvent.html'>
 
         <td>11:00 am</td>
-        <td><button class="selectbtn" onclick="window.location='academic-advising-sampleEvent.html'">Drop-In Peer Academic Advising</button></td>
+        <td>Drop-In Peer Academic Advising</button></td>
         <td>O'Connor 107</td>
       </tr>
-      <tr>
+      <tr class='clickable-row' data-href='http://www.washington.edu/calendar/#/?i=2'>
         <td>11:30 am</td>
         <td>Financial Planning Workshop</td>
         <td>Lucas 203B</td>
       </tr>
-      <tr>
+      <tr class='clickable-row' data-href='http://www.washington.edu/calendar/#/?i=2'>
         <td>12:00 pm</td>
         <td>Daily Mass</td>
         <td>Mission Church</td>
@@ -72,14 +72,14 @@
     <div class="well well-sm" id="datestring2"> </div>    
     <table class="table table-hover">
     <thead>
-      <tr>
+      <tr class='clickable-row' data-href='http://www.washington.edu/calendar/#/?i=2'>
         <th>Time</th>
         <th>Event</th>
         <th>Location</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr class='clickable-row' data-href='Bball-sampleEvent.html'>
         <td>9:00 am</td>
         <td>Study Abroad Info Session</td>
         <td>Benson 05</td>
@@ -89,9 +89,9 @@
         <td>SCU Jazz Combo Performance</td>
         <td>Mayer Theatre</td>
       </tr>
-      <tr>
+      <tr class='clickable-row' data-href='Bball-sampleEvent.html'>
         <td>2:00 pm</td>
-        <td><button class="selectbtn" onclick="window.location='Bball-sampleEvent.html'">SCU Women's Basketball vs Saint Mary's College </button></td>
+        <td>SCU Women's Basketball vs Saint Mary's College </button></td>
         <td>Leavey Center</td>
       </tr>
     </tbody>
@@ -131,6 +131,12 @@
     var datestring = weekday + ", "  + month +  " " + (d.getDate()+1);
     document.getElementById("datestring2").innerHTML = datestring;
 
+
+jQuery(document).ready(function($) {
+    $(".clickable-row").click(function() {
+        window.location = $(this).data("href");
+    });
+});
 
 </script>
 <script type="text/javascript">
