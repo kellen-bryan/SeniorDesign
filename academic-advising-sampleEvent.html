@@ -31,54 +31,26 @@
 <img src="single_event_header.png" class="img-responsive">
 
 <div class="container">
-    <h1>Women's Basketball vs. St Mary's College</h1>
+    <h1>Drop-In Peer Academic Advising</h1>
     <div class="row">
         <div class="col-sm-8">
             <!--<h1>Women's Basketball vs. St. Mary's College</h1>-->
             <p>
                 <br><br>
 
-                <b>When:</b> Wednesday, March 14th at 2:00pm
+                <b>When:</b> Wednesday, March 14th at 11:00am - 2:00pm
 
                 <br><br>
-                <b>Where:</b> Leavey Center
+                <b>Where:</b> O'Connor Hall Room 107
 
                 <br><br>
-                <b>Description:</b> Women's Basketball team takes on St. Mary's College in their 10th game of the season. Go Broncos!
+                <b>Description:</b> Drop-In Peer Academic Advising available for students who need further clarification from academic advisors
             </p>
             <br><br>
             <button type="button" onclick="window.location='homepage.html'">Back</button>
         </div>
-        <script type="text/javascript">
-            $('#sandbox-container .input-group.date').datepicker({});
-        </script>
     </div>
-
-    <script>
-
-        var weekdayNames = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-        var d = new Date();
-        var weekday = weekdayNames[d.getDay()];
-        var month = monthNames[d.getMonth()]
-
-        var datestring = weekday + ", "  + month +  " " + d.getDate();
-        document.getElementById("datestring1").innerHTML = datestring;
-
-        var d = new Date();
-        var weekday = weekdayNames[d.getDay()+1];
-        var month = monthNames[d.getMonth()+1]
-
-        var datestring = weekday + ", "  + month +  " " + (d.getDate()+1);
-        document.getElementById("datestring2").innerHTML = datestring;
-
-
-    </script>
-    <script type="text/javascript">
-        $('#sandbox-container .input-group.date').datepicker({
-        });
-    </script>
+</div>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
